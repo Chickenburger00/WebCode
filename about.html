@@ -1,0 +1,641 @@
+<!DOCTYPE html>  
+
+ 
+
+<html lang="en">  
+
+ 
+
+  
+
+ 
+
+<head>  
+
+ 
+
+    <meta charset="UTF-8">  
+
+ 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="css/styles.css">  
+
+ 
+
+    <title>TipTop Soles</title>  
+
+ 
+
+   
+
+ 
+
+    <style> 
+
+  
+
+ body {  
+
+ 
+
+font-family:sans-serif;  
+
+ 
+
+margin: 0;  
+
+ 
+
+padding: 0;  
+
+ 
+
+}  
+
+ 
+
+ 
+
+.container {  
+
+ 
+
+    position: relative; 
+
+ 
+
+width: 80%;  
+
+ 
+
+margin: 0 auto;  
+
+ 
+
+padding: 20px;  
+
+ 
+
+display: flex; 
+
+ 
+
+justify-content: space-between; 
+
+ 
+
+align-items: center; 
+
+ 
+
+}  
+
+ 
+
+ 
+
+header {  
+
+ 
+
+background-color: #333;  
+
+ 
+
+color: #fff;  
+
+ 
+
+padding: 10px 0;  
+
+ 
+
+display: flex;  
+
+ 
+
+align-items: center;  
+
+ 
+
+justify-content: space-between;  
+
+ 
+
+}  
+
+ 
+
+ 
+
+nav a {  
+
+ 
+
+color: #fff;  
+
+ 
+
+text-decoration: none;  
+
+ 
+
+margin: 0 20px;  
+
+ 
+
+transition: 0.3s;  
+
+ 
+
+}  
+
+ 
+
+ 
+
+nav a:hover {  
+
+ 
+
+color: #ffcc00;  
+
+ 
+
+transform: translateY(-10px);  
+
+ 
+
+box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);  
+
+ 
+
+}  
+
+ 
+
+.Shopping-cart img { 
+
+ 
+
+     width: 30px; 
+
+     height: 30px; 
+
+} 
+
+ 
+
+ 
+
+.website-description {  
+
+ 
+
+font-style: italic; 
+
+font-weight: bold; 
+
+text-shadow: 2px 2px 4px rgba(228, 214, 17, 0.5); 
+
+letter-spacing: 2px; 
+
+text-transform: uppercase; 
+
+ 
+
+background: url('images/hero-bg.jpg') center/cover;  
+
+ 
+
+text-align: center;  
+
+ 
+
+padding: 100px 0;  
+
+ 
+
+}  
+
+ 
+
+ 
+
+.products {  
+
+ 
+
+display: flex;  
+
+ 
+
+flex-wrap: wrap;  
+
+ 
+
+justify-content: space-around;  
+
+ 
+
+margin-top: -100px;  
+
+ 
+
+}  
+
+ 
+
+ 
+
+.product {  
+
+ 
+
+width: 1000px;  
+
+ 
+
+margin: 20px;  
+
+ 
+
+padding: 20px;  
+
+ 
+
+border: 1px solid #ccc;  
+
+ 
+
+border-radius: 10px;  
+
+ 
+
+text-align: center;  
+
+ 
+
+transition: 0.3s;  
+
+ 
+
+}  
+
+ 
+
+ 
+
+.product:hover {  
+
+ 
+
+transform: translateY(-10px);  
+
+ 
+
+box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);  
+
+ 
+
+}  
+
+ 
+
+ 
+
+footer {  
+
+ 
+
+background-color: #333;  
+
+ 
+
+color: #fff;  
+
+ 
+
+padding: 20px 0;  
+
+ 
+
+text-align: center;  
+
+ 
+
+}  
+
+ 
+
+.privacy-link { 
+
+    color: #fff; 
+
+} 
+
+ 
+
+.terms-link { 
+
+    color: #fff; 
+
+} 
+
+ 
+
+.social-media a {  
+
+ 
+
+color: #fff;  
+
+ 
+
+margin: 0 20px;  
+
+ 
+
+transition: 0.3s;  
+
+ 
+
+}  
+
+ 
+
+ 
+
+.social-media img{ 
+
+ 
+
+width: 50px; 
+
+height: 50px; 
+
+margin: 0 10px; 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+.add-to-cart {  
+
+ 
+
+background-color: #ffcc00;  
+
+ 
+
+color: #333;  
+
+ 
+
+border: none;  
+
+ 
+
+padding: 10px 20px;  
+
+ 
+
+border-radius: 5px;  
+
+ 
+
+cursor: pointer;  
+
+ 
+
+transition: 0.3s;  
+
+ 
+
+}  
+
+ 
+
+ 
+
+.add-to-cart:hover {  
+
+ 
+
+background-color: #333;  
+
+ 
+
+color: #ffcc00;  
+
+ 
+
+transform: translateY(-10px);  
+
+ 
+
+box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);  
+
+ 
+
+}  
+
+ 
+
+    </style> 
+
+ 
+
+</head>  
+
+ 
+
+  
+
+ 
+
+<body>  
+
+ 
+
+    <header>  
+
+ 
+
+        <div class="container">  
+
+ 
+
+            <a href="index.html">  
+
+ 
+
+                <img src="images/logo.png" alt="TipTop Soles Logo">  
+
+ 
+
+            </a>  
+
+ 
+
+            <nav>  
+
+ 
+
+                <a href="index.html">Home</a>  
+
+ 
+
+                <a href="about.html">About Us</a>  
+
+ 
+
+                <a href="contact.html">Contact Us</a>  
+
+ 
+
+            </nav>  
+
+        </a>  
+
+        <div class="search-bar"> 
+
+            <input type="text" placeholder="Search..."> 
+
+            <button type="button">Search</button> 
+
+        </div> 
+
+            <div class="Shopping-cart">  
+
+ 
+
+                    <img src="images/shopping cart.png" alt="Shopping Cart Logo">  
+
+ 
+
+                </a>  
+
+ 
+
+            </div>  
+
+ 
+
+        </div>  
+
+ 
+
+    </header>  
+
+ 
+
+    <main>  
+
+ 
+
+        <section class="website-description">  
+
+ 
+
+            <div class="container">  
+
+     
+
+                <h2>TipTop Soles started with a vision to provide high quality, affordable footwear to people around the world. Founded in the heart of Sydney, Australia, our journey began with a passion for comfortable and stylish shoes. Over the years, we've grown into a trusted brand, known for our dedication to quality and customer satisfaction. 
+
+ 
+
+                    Our mission is simple: to help you discover comfort and style like never before. From cozy loafers to classic leather shoes and comfortable sneakers, we curate a range of footwear designed to enhance your active lifestyle and elevate your fashion statement. Every pair is crafted with care, ensuring durability, elegance, and, above all, unmatched comfort. 
+
+                     
+
+                    At TipTop Soles, we're more than just a shoe store, we're a community of footwear enthusiasts, dedicated to making your walking experience a delightful one. Join us in this exciting journey, and let's step into a world of comfort and style together! 
+
+ 
+
+                </h2>  
+
+ 
+
+            </div>  
+
+ 
+
+            <main> 
+
+ 
+
+                <footer>  
+
+ 
+
+                    <div class="container">  
+
+             
+
+                        <div class="footer-links">  
+
+             
+
+                            <a href="privacy.html" class="privacy-link">Privacy Policy</a>  
+
+             
+
+                            <a href="terms.html" class="terms-link">Terms of Service</a>  
+
+             
+
+                        </div>  
+
+             
+
+                        <div class="social-media">  
+
+             
+
+                            <img src="images/insta.png" alt="Instagram Logo"> 
+
+             
+
+                            <img src="images/Facebook.png" alt="Facebook Logo">  
+
+        
+
+             
+
+                        </div>  
+
+             
+
+                    </div>  
+
+             
+
+                </footer>  
+
+ 
+
+            </body>  
+
+ 
+
+  
+
+ 
+
+            </html> 
